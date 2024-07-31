@@ -1,0 +1,86 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Ball here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Ball extends Actor
+{
+    private int deltaX  ; // change in x direction
+    private int deltaY ; // change in y direction
+
+    /**
+     * Create a ball.
+     */
+    public Ball()
+    {
+       
+        deltaX = Greenfoot.getRandomNumber(4) + 1 ;
+        deltaY = Greenfoot.getRandomNumber(4) + 1;
+
+    }
+
+    /**
+     * Act - do whatever the Ball wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act() 
+    {
+        ballMove();
+        if (missedPaddle())
+        {
+           getWorld().removeObject(this) ;
+        }
+    }  
+
+    /**
+     * this method moves the ball around the screen.
+     */
+    public void ballMove()
+    {
+
+        int xCoordinate = getX() + deltaX ;
+        int yCoordinate = getY() + deltaY ;
+
+        setLocation(xCoordinate, yCoordinate);
+
+        if (bouncedOffWall())
+        {
+            
+
+        }
+        if (bouncedOffPaddle())
+        {
+            
+
+        }
+    }
+
+    /**
+     * Test if we are close to one of the edges of the world. Return true is we are.
+     */
+    public boolean bouncedOffWall()
+    {
+        return true ;
+    
+    }
+    
+    public boolean bouncedOffPaddle()
+    {/**
+     * Test if the ball hits one of the paddles. Return true if it does.
+     */
+        return true ;
+    }
+  
+    /**
+     * Test to see if the ball missed the paddle.  Return true if it does.
+     */
+    public boolean missedPaddle() 
+    {
+        return true ;
+            
+    }
+
+}

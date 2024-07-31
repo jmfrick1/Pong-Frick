@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Check\ for\ mouse\ clicks.\r\n
+comment3.params=
+comment3.target=void\ Populate()
+comment3.text=\r\n\ Add\ objects\ to\ the\ World\r\n
+comment4.params=
+comment4.target=void\ Credits()
+comment4.text=\r\n\ Display\ Title,\ Author,\ and\ Date\r\n
+comment5.params=
+comment5.target=void\ setUpBackground()
+comment6.params=
+comment6.target=void\ prepare()
+comment6.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment7.params=
+comment7.target=void\ addCounter()
+comment8.params=
+comment8.target=void\ removeMessage()
+comment9.params=
+comment9.target=void\ winner()
+numComments=10

@@ -1,0 +1,41 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class PaddleRight here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class PaddleRight extends Paddle
+{
+    private int yPos ;
+    private int players ;
+    
+    /**
+     * Act - do whatever the PaddleRight wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    
+    public PaddleRight(int numPlayers)
+    {
+     setRotation(90) ;
+     yPos = 200 ;
+    }
+    public void act() 
+    {
+        setLocation(540, yPos) ;
+        checkKeyDown() ;
+    } 
+    public void checkKeyDown()
+    {
+        if ( Greenfoot.isKeyDown("up"))
+            yPos-- ;
+        if ( yPos == 39)
+            yPos = 40 ;
+           if ( Greenfoot.isKeyDown("down"))
+            yPos++ ;
+        if ( yPos == 361)
+            yPos = 360 ;
+        
+    }
+}

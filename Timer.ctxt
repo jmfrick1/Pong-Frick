@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Timer
+comment0.text=\r\n\ Counts\ scroe\ and\ time\r\n\ \r\n\ Jordan\ Frick\r\n\ @version\ 1.2\r\n
+comment1.params=
+comment1.target=Timer()
+comment1.text=\r\n\ the\ constructor\r\n
+comment2.params=startValue
+comment2.target=Timer(int)
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Does\ everything\ a\ counter\ can\ do\r\n
+comment4.params=
+comment4.target=void\ addPoint()
+comment4.text=\r\n\ adds\ one\ point\ to\ counter\r\n
+comment5.params=
+comment5.target=void\ add5()
+comment5.text=\r\n\ adds\ five\ points\ to\ counter\r\n
+comment6.params=
+comment6.target=void\ countTime()
+comment6.text=\r\n\ counts\ time\ \r\n
+numComments=7
